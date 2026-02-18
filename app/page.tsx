@@ -133,7 +133,7 @@ export default function Home() {
   ]
 
   const valueProps = [
-    { value: '$0', label: 'Account Fees', description: 'No maintenance or account minimum fees' },
+    { value: '✅', label: 'Deployment Test', description: 'UI modifications live and working!' },
     { value: '0.15%', label: 'Average Expense Ratio', description: 'Well below industry average of 0.44%' },
     { value: '$1', label: 'Minimum Investment', description: 'Start investing with any amount' },
     { value: '276/326', label: 'Funds Outperform', description: 'Beat peer-group averages over 10 years' },
@@ -205,18 +205,18 @@ export default function Home() {
           <div className={`mb-8 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <div className="inline-flex items-center space-x-2 bg-[#C4A77D]/10 border border-[#C4A77D]/20 rounded-full px-6 py-2 mb-8">
               <Sparkles className="w-4 h-4 text-[#C4A77D]" />
-              <span className="text-sm font-semibold text-[#C4A77D]">Get $0 commission trades + $0 account fees</span>
+              <span className="text-sm font-semibold text-[#C4A77D]">✨ Deploy Test: UI Updated Successfully!</span>
             </div>
           </div>
           
           <h1 className={`text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight transition-all duration-700 delay-100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Invest smart<br />
-            <span className="gradient-text">from the start</span>
+            Smart investing<br />
+            <span className="gradient-text">made simple</span>
           </h1>
           
           <p className={`text-xl md:text-2xl text-gray-400 mb-16 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Low costs, expert guidance, and a clear path to your financial goals. 
-            Join millions of investors who trust InvestIQ for their financial future.
+            Professional guidance, automated strategies, and intelligent insights. 
+            Build your wealth with confidence using our AI-powered investment platform.
           </p>
 
           {/* Value Props */}
@@ -619,7 +619,7 @@ export default function Home() {
           <div className="border-t border-white/6 pt-10">
             <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
               <p className="text-gray-500 text-sm">
-                © 2026 InvestIQ. All rights reserved. Demo for testing purposes.
+                © 2026 InvestIQ. Deployment Test v2.0 - Updated UI ✨
               </p>
               <div className="flex items-center space-x-8 text-sm text-gray-500">
                 <a href="#" className="hover:text-[#C4A77D] transition-colors duration-300">Privacy Policy</a>
