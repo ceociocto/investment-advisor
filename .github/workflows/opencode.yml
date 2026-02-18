@@ -47,4 +47,4 @@ jobs:
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
         with:
           model: zai-coding-plan/glm-4.7
-          PROMPT: ${{ github.event_name == 'workflow_dispatch' && inputs.task_description || github.event.comment.body }}
+          PROMPT: ${{ github.event_name == 'workflow_dispatch' && inputs.task_description || github.event_name == 'issues' && github.event.issue.body || github.event.comment.body }}
