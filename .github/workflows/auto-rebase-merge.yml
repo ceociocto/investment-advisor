@@ -1,0 +1,60 @@
+name: Auto Rebase and Merge
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main, master]
+
+jobs:
+  auto-rebase-merge:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Check for merge conflicts
+        id: check-conflicts
+        run: |
+          git fetch origin ${{ github.event.pull_request.base.ref }}
+          git checkout ${{ github.event.pull_request.head.ref }}
+          
+          # Try to rebase
+          if git rebase origin/${{ github.event.pull_request.base.ref }}; then
+            echo "has_conflicts=false" >> $GITHUB_OUTPUT
+            echo "No conflicts detected"
+          else
+            echo "has_conflicts=true" >> $GITHUB_OUTPUT
+            echo "Conflicts detected, aborting rebase"
+            git rebase --abort
+            exit 0
+          fi
+      
+      - name: Auto rebase and merge
+        if: steps.check-conflicts.outputs.has_conflicts == 'false'
+        run: |
+          # Push rebased branch
+          git push --force-with-lease origin ${{ github.event.pull_request.head.ref }}
+          
+          # Merge PR
+          gh pr merge ${{ github.event.pull_request.number }} --rebase --delete-branch --auto
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Comment on PR if conflicts
+        if: steps.check-conflicts.outputs.has_conflicts == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '❌ 自动 rebase 失败：检测到合并冲突。请手动解决冲突后再尝试。'
+            })
