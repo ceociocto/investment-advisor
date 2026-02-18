@@ -140,7 +140,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#FFC0CB]">
+    <main className="min-h-screen bg-[#0a0a0a]">
       {/* Animated Background */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A2463]/5 via-transparent to-[#034732]/5" />
@@ -149,7 +149,7 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <header className={`border-b border-white/6 sticky top-0 z-50 transition-all duration-300 ${scrollY > 50 ? 'glass-dark' : 'bg-[#FFC0CB]/80 backdrop-blur-lg'}`}>
+      <header className={`border-b border-white/6 sticky top-0 z-50 transition-all duration-300 ${scrollY > 50 ? 'glass-dark' : 'bg-[#0a0a0a]/80 backdrop-blur-lg'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className={`flex items-center space-x-3 transition-all duration-500 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}>
@@ -182,7 +182,7 @@ export default function Home() {
       </header>
 
       {/* Trust Badges */}
-      <section className="border-b border-white/6 py-5 bg-[#FFC0CB]/50 backdrop-blur-sm">
+      <section className="border-b border-white/6 py-5 bg-[#0a0a0a]/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center space-x-12 md:space-x-20">
             {trustBadges.map((badge, index) => (
@@ -247,7 +247,7 @@ export default function Home() {
       </section>
 
       {/* Investment Calculator */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#FFC0CB] to-[#FFB6C1]">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#141414]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -527,7 +527,7 @@ export default function Home() {
       )}
 
       {/* Why Choose Us */}
-      <section className="py-24 px-4 bg-gradient-to-b from-[#FFB6C1] to-[#FFC0CB]">
+      <section className="py-24 px-4 bg-gradient-to-b from-[#141414] to-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -576,7 +576,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#FFC0CB] border-t border-white/6 text-white py-16 px-4">
+      <footer className="bg-[#0a0a0a] border-t border-white/6 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
