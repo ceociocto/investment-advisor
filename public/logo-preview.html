@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestIQ Logo Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #0A2463;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #C4A77D;
+            margin-bottom: 40px;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .logo-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .logo-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0A2463;
+            margin-bottom: 8px;
+        }
+        .logo-description {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #0A2463;
+            margin-bottom: 15px;
+        }
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .color-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .color-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border: 2px solid #e0e0e0;
+        }
+        .color-name {
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+        .color-hex {
+            font-size: 11px;
+            color: #666;
+        }
+        .usage-list {
+            list-style: none;
+        }
+        .usage-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .usage-list li:before {
+            content: "✓";
+            color: #C4A77D;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>InvestIQ Logo Design</h1>
+        <p class="subtitle">Modern Minimalist Company Logo</p>
+        
+        <div class="logo-grid">
+            <div class="logo-card">
+                <img src="logo.svg" alt="Main Logo">
+                <div class="logo-title">Main Logo</div>
+                <div class="logo-description">Primary brand identifier with trending growth chart</div>
+            </div>
+            
+            <div class="logo-card">
+                <img src="logo-hex.svg" alt="Hex Logo">
+                <div class="logo-title">Hex Logo</div>
+                <div class="logo-description">Dark theme version with geometric hexagon</div>
+            </div>
+            
+            <div class="logo-card">
+                <img src="logo-minimal.svg" alt="Minimal Logo">
+                <div class="logo-title">Minimal Logo</div>
+                <div class="logo-description">Clean design with concentric intelligence waves</div>
+            </div>
+            
+            <div class="logo-card">
+                <img src="logo-horizontal.svg" alt="Horizontal Logo">
+                <div class="logo-title">Horizontal Logo</div>
+                <div class="logo-description">Wide format for headers and banners</div>
+            </div>
+            
+            <div class="logo-card">
+                <img src="favicon.svg" alt="Favicon">
+                <div class="logo-title">Favicon</div>
+                <div class="logo-description">Simplified icon for browser tabs and app icons</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Color Palette</h2>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-box" style="background: linear-gradient(135deg, #C4A77D, #8B7355);"></div>
+                    <div class="color-name">Gold</div>
+                    <div class="color-hex">#C4A77D → #8B7355</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background: linear-gradient(135deg, #0A2463, #1e3a8a);"></div>
+                    <div class="color-name">Navy Blue</div>
+                    <div class="color-hex">#0A2463 → #1e3a8a</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background: linear-gradient(135deg, #034732, #065f46);"></div>
+                    <div class="color-name">Deep Green</div>
+                    <div class="color-hex">#034732 → #065f46</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background: #ffffff;"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#ffffff</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Usage Recommendations</h2>
+            <ul class="usage-list">
+                <li><strong>Main Logo</strong> - Use for website header, marketing materials, and brand presentations</li>
+                <li><strong>Hex Logo</strong> - Perfect for dark theme interfaces and premium materials</li>
+                <li><strong>Minimal Logo</strong> - Ideal for minimalist design contexts and modern fintech applications</li>
+                <li><strong>Horizontal Logo</strong> - Best suited for website headers, navigation bars, and wide banners</li>
+                <li><strong>Favicon</strong> - Use as browser tab icon, mobile app icon, and small-scale applications</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Design Principles</h2>
+            <ul class="usage-list">
+                <li><strong>Modernity</strong> - Clean geometric shapes and contemporary typography</li>
+                <li><strong>Simplicity</strong> - Minimal design for instant recognition and versatility</li>
+                <li><strong>Professionalism</strong> - Sophisticated color palette conveying trust and expertise</li>
+                <li><strong>Scalability</strong> - All logos in SVG format for infinite resolution</li>
+                <li><strong>Intelligence</strong> - AI-powered design reflecting the platform's capabilities</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -154,12 +154,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className={`flex items-center space-x-3 transition-all duration-500 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}>
-              <div className="w-12 h-12 bg-gradient-to-br from-[#0A2463] to-[#034732] rounded-xl flex items-center justify-center shadow-lg pulse-glow">
-                <TrendingUp className="w-7 h-7 text-[#C4A77D]" />
+              <div className="w-12 h-12 flex items-center justify-center">
+                <img src="/favicon.svg" alt="InvestIQ Logo" className="w-12 h-12" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-white">InvestIQ</h1>
-                <p className="text-xs text-gray-400 tracking-wide">PROFESSIONAL INVESTMENT MANAGEMENT</p>
+                <p className="text-xs text-gray-400 tracking-wide">AI INTELLIGENCE</p>
               </div>
             </div>
             <nav className="hidden lg:flex items-center space-x-10">

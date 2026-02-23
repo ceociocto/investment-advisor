@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C4A77D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B7355;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2463;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#034732;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#065f46;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="#ffffff" rx="20" ry="20"/>
+  
+  <g transform="translate(30, 30)">
+    <path d="M 20 100 L 50 80 L 80 90 L 110 50 L 140 60" 
+          stroke="url(#goldGradient)" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          fill="none"/>
+    
+    <circle cx="20" cy="100" r="8" fill="url(#blueGradient)"/>
+    <circle cx="50" cy="80" r="8" fill="url(#blueGradient)"/>
+    <circle cx="80" cy="90" r="8" fill="url(#blueGradient)"/>
+    <circle cx="110" cy="50" r="10" fill="url(#goldGradient)"/>
+    <circle cx="140" cy="60" r="10" fill="url(#greenGradient)"/>
+    
+    <circle cx="110" cy="50" r="16" stroke="url(#goldGradient)" stroke-width="3" fill="none" opacity="0.3"/>
+    <circle cx="140" cy="60" r="16" stroke="url(#greenGradient)" stroke-width="3" fill="none" opacity="0.3"/>
+  </g>
+  
+  <text x="100" y="175" 
+        text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="20" 
+        font-weight="bold" 
+        fill="#0A2463">InvestIQ</text>
+</svg>
