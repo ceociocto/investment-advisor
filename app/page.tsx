@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { TrendingUp, Shield, BarChart3, DollarSign, Clock, ArrowRight, CheckCircle2, Award, Building2, LineChart as LineChartIcon, Lock, Percent, Sparkles } from 'lucide-react'
+import Link from 'next/link'
+import { TrendingUp, Shield, BarChart3, DollarSign, Clock, ArrowRight, CheckCircle2, Award, Building2, LineChart as LineChartIcon, Lock, Percent, Sparkles, Newspaper } from 'lucide-react'
 import { PieChart as RechartsPieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip, AreaChart, Area, XAxis, YAxis, CartesianGrid } from 'recharts'
 
 interface Strategy {
@@ -173,6 +174,16 @@ export default function Home() {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C4A77D] group-hover:w-full transition-all duration-300" />
                 </a>
               ))}
+              <Link 
+                href="/briefing"
+                className="text-sm font-medium text-gray-300 hover:text-[#C4A77D] transition-colors relative group"
+              >
+                <span className="flex items-center space-x-2">
+                  <Newspaper className="w-4 h-4" />
+                  <span>Weekly Briefing</span>
+                </span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C4A77D] group-hover:w-full transition-all duration-300" />
+              </Link>
             </nav>
             <button className="bg-gradient-to-r from-[#0A2463] to-[#034732] text-white px-8 py-3 rounded-lg text-sm font-semibold hover:shadow-xl hover:shadow-[#C4A77D]/10 transition-all duration-300 border border-[#C4A77D]/20">
               Open an Account

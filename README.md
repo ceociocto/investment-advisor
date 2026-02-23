@@ -4,6 +4,7 @@ A modern, responsive web application for generating personalized investment stra
 
 ## 🚀 Features
 
+- **Weekly Investment Briefing**: Comprehensive AI & cryptocurrency market analysis with trends and recommendations
 - **Interactive Investment Calculator**: Input your investment amount, risk tolerance, and time horizon
 - **AI-Powered Strategy Generation**: Get personalized investment recommendations
 - **Dynamic Asset Allocation**: Visual breakdown of portfolio distribution
@@ -56,11 +57,25 @@ Or use the Cloudflare dashboard:
 
 ## 💡 Usage
 
+### Investment Calculator
+
 1. Select your risk tolerance (Low, Medium, or High)
 2. Enter your investment amount
 3. Specify your investment timeline
 4. Click "Generate Investment Strategy"
 5. View your personalized investment recommendation
+
+### Weekly Investment Briefing
+
+Access the latest AI & cryptocurrency market analysis by visiting `/briefing` or clicking "Weekly Briefing" in the navigation. The briefing includes:
+
+- **Executive Summary**: Key market movements and sentiment
+- **AI Market Analysis**: Top performers, trends, and recommendations
+- **Crypto Market Analysis**: Bitcoin, altcoins, and DeFi sector insights
+- **Risk Factors**: Potential market risks to watch
+- **Upcoming Events**: Important market events that may impact investments
+
+For detailed documentation, see [BRIEFING_README.md](./BRIEFING_README.md)
 
 ## 📄 License
 
