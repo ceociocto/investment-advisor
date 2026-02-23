@@ -11,6 +11,23 @@ A modern, responsive web application for generating personalized investment stra
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Dark Mode Support**: Automatic dark mode based on system preferences
 
+## 🎨 Brand Identity
+
+The InvestIQ logo features a modern minimalist design that reflects our AI-powered investment intelligence:
+
+- **Main Logo** (`/logo.svg`) - Primary brand identifier with trending growth chart
+- **Hex Logo** (`/logo-hex.svg`) - Dark theme version with geometric hexagon
+- **Minimal Logo** (`/logo-minimal.svg`) - Clean design with concentric intelligence waves
+- **Horizontal Logo** (`/logo-horizontal.svg`) - Wide format for headers and banners
+- **Favicon** (`/favicon.svg`) - Simplified icon for browser tabs and app icons
+
+**Color Palette:**
+- Gold: `#C4A77D` → `#8B7355` (wealth, premium quality, success)
+- Navy Blue: `#0A2463` → `#1e3a8a` (trust, professionalism, stability)
+- Deep Green: `#034732` → `#065f46` (growth, financial success)
+
+For detailed logo usage guidelines and design specifications, see [`public/LOGO_DESIGN.md`](./public/LOGO_DESIGN.md).
+
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
